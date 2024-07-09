@@ -15582,7 +15582,7 @@ span.flaticon-multiply i {
   position: absolute;
   border-radius: 50%;
   inset: 0;
-  background: linear-gradient(90deg, #bbf737 0%, #ffee62 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
   transform: rotate(0deg) translate(30px);
   animation: rotate 1.1s ease infinite;
 }
