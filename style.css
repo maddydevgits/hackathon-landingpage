@@ -15645,3 +15645,22 @@ div#particles .slider16 {
 div#particles .slider18 {
   background: inherit;
 }
+.marquee-container {
+  overflow: hidden;
+  width: 100%; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  margin: 0 auto; /* Center the marquee */
+  display: flex; /* Arrange images side-by-side */
+  animation: scroll-images 15s linear infinite; /* Animation for smooth scrolling */
+}
+
+.marquee-container img {
+  width: 20%; /* Adjust image width as needed */
+  height: 100%; /* Match container height */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+@keyframes scroll-images {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); } /* Adjust distance for full scroll */
+}
