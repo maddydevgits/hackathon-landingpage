@@ -15645,7 +15645,7 @@ div#particles .slider16 {
 div#particles .slider18 {
   background: inherit;
 }
-.marquee img{
+.marquee marquee img{
   width: 220px;
   margin: 20px 20px;
   height: 200px;
