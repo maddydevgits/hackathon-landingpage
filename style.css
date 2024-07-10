@@ -15658,6 +15658,7 @@ div#particles .slider18 {
   width: 20%; /* Adjust image width as needed */
   height: 100%; /* Match container height */
   object-fit: cover; /* Maintain aspect ratio */
+  margin: 10px 30px;
 }
 
 @keyframes scroll-images {
