@@ -5601,7 +5601,7 @@
                                 color="purple200" class="styles__ButtonLinkStyle-sc-clge7v-0 OfrNb button button-link" href="/organizations" target="" rel="" value="For organizations" data-testid="hero-cta-for-organizations" data-event="" aria-label="" aria-hidden="false"><svg viewBox="0 0 32 32" class="icon"><path d="M9.30048 5.97303C9.92904 5.21876 11.05 5.11685 11.8043 5.74541L22.471 14.6343C22.8763 14.9721 23.1106 15.4724 23.1106 16C23.1106 16.5276 22.8763 17.028 22.471 17.3658L11.8043 26.2546C11.05 26.8832 9.92904 26.7813 9.30048 26.027C8.67192 25.2727 8.77383 24.1517 9.5281 23.5232L18.5559 16L9.5281 8.47686C8.77383 7.8483 8.67192 6.7273 9.30048 5.97303Z"></path></svg><span>For Colleges</span></a>
                         </div>
                         <div class="sc-e84a7754-1 eovKUE">
-                            <div class="sc-e84a7754-3 byASMM"><button class="active" onclick="replaceCoins()">Coins Page</button><button class="active" onclick="replaceIdeas()">Ideas directory</button><button class="active" id="taskbar">Task bar</button>
+                            <div class="sc-e84a7754-3 byASMM"><button class="active" onclick="replaceCoins()">Coins Page</button><button class="active" onclick="replaceIdeas()">Ideas directory</button><button class="active" onclick="replaceTaskbar()">Task bar</button>
                             </div>
                             <img src="./images/usercoins.png" id="carousel" style="width: 90%;height: 500px;margin-left: 80px;">
                             <!-- <div class="product-shot">
@@ -6383,6 +6383,9 @@
         }
         function replaceIdeas(){
             document.getElementById('carousel').src='./images/ideasdirectory.png'
+        }
+        function replaceTaskbar(){
+            document.getElementById('carousel').src='./images/usercoins.png'
         }
     </script>
 </body>
