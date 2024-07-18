@@ -1165,16 +1165,20 @@
             /*!sc*/
     
             .jpgtoB {
-                position: fixed;
-                background-color: rgba(249, 248, 252, 0.8);
-                border-bottom: 0.0625rem solid #D9D4ED;
-                width: 100%;
-                height: calc(3.75rem + 2.5rem);
-                padding: 0 1rem;
-                -webkit-backdrop-filter: blur(0.25rem);
-                backdrop-filter: blur(0.25rem);
-                z-index: 9;
-            }
+    position: fixed; /* Ensures the element stays fixed relative to the viewport */
+    top: 0; /* Positions the element at the top of the viewport */
+    left: 0; /* Positions the element at the left edge of the viewport */
+    background-color: rgba(249, 248, 252, 0.9); /* Slightly increased opacity for better contrast */
+    border-bottom: 1px solid #D9D4ED; /* Simplified unit and consistent styling */
+    width: 100%; /* Ensures the element spans the full width of the viewport */
+    height: 6.25rem; /* Consolidated height calculation for simplicity */
+    /* padding: 0 1.5rem; Increased padding for better spacing */
+    backdrop-filter: blur(4px); /* Simplified blur value */
+    z-index: 1000; /* Increased z-index for higher stacking context */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+    transition: background-color 0.3s, backdrop-filter 0.3s; /* Added transitions for smooth effect changes */
+}
+
     
             /*!sc*/
     
@@ -5493,11 +5497,99 @@
             .sc-48d02871-0 gpSqqr 
     
             /*!sc*/
+            body {
+            font-family: 'SFRounded', ui-rounded, 'SF Pro Rounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .blog-post {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .blog-post .post-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 1em;
+        }
+
+        .blog-post .post-meta span {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .blog-post h2 {
+            font-size: 1.8em;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            color: #0E76FD;
+        }
+
+        .blog-post p {
+            margin-bottom: 1em;
+        }
+
+        .partnerContainer {
+            background-color: #0E76FD;
+            color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .partnerContainer .partnerTitle span {
+            font-weight: bold;
+        }
+
+        .partnerContainer p {
+            color: #fff;
+        }
+
+        .partnerContainer .iconContainer img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .partnerContainer .subTitleContainer p {
+            margin-top: 10px;
+        }
+
+        .partnerContainer .customStartLink {
+            display: inline-block;
+            background-color: #fff;
+            color: #0E76FD;
+            padding: 10px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
         </style>
     </head>
 <body>
-    <div id="__next">
-        <div data-rk="">
+    <div id="__next" >
+        <div data-rk="" >
             <style>
                 [data-rk] {
                     --rk-blurs-modalOverlay: blur(0px);
@@ -5547,58 +5639,65 @@
             </style>
             <div class="sc-f665c30b-0 jbrCMR">
                 <div class="sc-e9689e97-0 jpgtoB nav">
-                    <div class="sc-e9689e97-7 jyioOO"><a href="/point-system"><span>Submit Problems, Earn Coins!</span></div>
-                    <div
-                        class="sc-e9689e97-1 gFVNHq"><button class="sc-e9689e97-2 jSrkpH" aria-label="Menu"></button>
-                        <div class="sc-e9689e97-3 kZdyoo"><a href="/"><img alt="makeskiled_logo" src="./images/Make-9.png" width="120" height="50"></a></div>
-                        <nav
-                            aria-label="Main" data-orientation="horizontal" dir="ltr" class="styles_NavigationMenuRoot__P_zfK">
+                    <div class="sc-e9689e97-7 jyioOO">
+                        <a href="/point-system"><span>Submit Problems, Earn Coins!</span></a>
+                    </div>
+                    <div class="sc-e9689e97-1 gFVNHq">
+                        <button class="sc-e9689e97-2 jSrkpH" aria-label="Menu"></button>
+                        <div class="sc-e9689e97-3 kZdyoo">
+                            <a href="/"><img alt="makeskiled_logo" src="./images/Make-9.png" width="120" height="50"></a>
+                        </div>
+                        <nav aria-label="Main" data-orientation="horizontal" dir="ltr" class="styles_NavigationMenuRoot__P_zfK">
                             <div style="position:relative">
                                 <ul data-orientation="horizontal" class="styles_NavigationMenuList__5D5Co" dir="ltr">
                                     <li><a class="styles_NavigationMenuLink__M9pYA" href="/en/hackathons" data-radix-collection-item="">Hackathons</a></li>
-                                    <li><button id="radix-:R1pahb6:-trigger-radix-:R9dpahb6:" data-state="closed" aria-expanded="false" aria-controls="radix-:R1pahb6:-content-radix-:R9dpahb6:" class="styles_NavigationMenuTrigger__hkhVX" data-radix-collection-item="">Students<!-- --> <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="styles_CaretDown__DDLUj" aria-hidden="true"><path d="M4.18179 6.18181C4.35753 6.00608 4.64245 6.00608 4.81819 6.18181L7.49999 8.86362L10.1818 6.18181C10.3575 6.00608 10.6424 6.00608 10.8182 6.18181C10.9939 6.35755 10.9939 6.64247 10.8182 6.81821L7.81819 9.81821C7.73379 9.9026 7.61934 9.95001 7.49999 9.95001C7.38064 9.95001 7.26618 9.9026 7.18179 9.81821L4.18179 6.81821C4.00605 6.64247 4.00605 6.35755 4.18179 6.18181Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button></li>
-                                    <li><button id="radix-:R1pahb6:-trigger-radix-:Rddpahb6:" data-state="closed" aria-expanded="false" aria-controls="radix-:R1pahb6:-content-radix-:Rddpahb6:" class="styles_NavigationMenuTrigger__hkhVX" data-radix-collection-item="">Colleges<!-- --> <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="styles_CaretDown__DDLUj" aria-hidden="true"><path d="M4.18179 6.18181C4.35753 6.00608 4.64245 6.00608 4.81819 6.18181L7.49999 8.86362L10.1818 6.18181C10.3575 6.00608 10.6424 6.00608 10.8182 6.18181C10.9939 6.35755 10.9939 6.64247 10.8182 6.81821L7.81819 9.81821C7.73379 9.9026 7.61934 9.95001 7.49999 9.95001C7.38064 9.95001 7.26618 9.9026 7.18179 9.81821L4.18179 6.81821C4.00605 6.64247 4.00605 6.35755 4.18179 6.18181Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button></li>
-                                    <li><button id="radix-:R1pahb6:-trigger-radix-:Rhdpahb6:" data-state="closed" aria-expanded="false" aria-controls="radix-:R1pahb6:-content-radix-:Rhdpahb6:" class="styles_NavigationMenuTrigger__hkhVX" data-radix-collection-item="">Learn<!-- --> <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="styles_CaretDown__DDLUj" aria-hidden="true"><path d="M4.18179 6.18181C4.35753 6.00608 4.64245 6.00608 4.81819 6.18181L7.49999 8.86362L10.1818 6.18181C10.3575 6.00608 10.6424 6.00608 10.8182 6.18181C10.9939 6.35755 10.9939 6.64247 10.8182 6.81821L7.81819 9.81821C7.73379 9.9026 7.61934 9.95001 7.49999 9.95001C7.38064 9.95001 7.26618 9.9026 7.18179 9.81821L4.18179 6.81821C4.00605 6.64247 4.00605 6.35755 4.18179 6.18181Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button></li>
+                                    <li><button id="students-trigger" data-state="closed" aria-expanded="false" aria-controls="students-content" class="styles_NavigationMenuTrigger__hkhVX" data-radix-collection-item="">Students</button></li>
+                                    <li><button id="colleges-trigger" data-state="closed" aria-expanded="false" aria-controls="colleges-content" class="styles_NavigationMenuTrigger__hkhVX" data-radix-collection-item="">Colleges</button></li>
+                                    <li><button id="learn-trigger" data-state="closed" aria-expanded="false" aria-controls="learn-content" class="styles_NavigationMenuTrigger__hkhVX" data-radix-collection-item="">Learn</button></li>
                                 </ul>
                             </div>
-                            <div class="styles_ViewportPosition__wHuhU"></div>
                         </nav>
-                            <div class="sc-e9689e97-5 jVtAAi"><a color="purple500" class="styles__ButtonLinkStyle-sc-clge7v-0 jSNUG button login-button" href="/en/login" target="" rel="" value="Log in" data-testid="login-button" data-event="" aria-label="" aria-hidden="false"><span>Log in</span></a></div>
                     </div>
                 </div>
+                <div style="padding: 50px;">
+                    <!-- <div class="partnerContainer">
+                        <div class="partnerTitle"><span>Partner Spotlight:</span> Tech Innovators</div>
+                        <div class="iconContainer"><img src="./images/partner-icon.png" alt="Partner Icon"></div>
+                        <div class="subTitleContainer"><p>Leading the way in tech innovation and support for the developer community.</p></div>
+                        <a href="/partners" class="customStartLink">Learn More</a>
+                    </div> -->
+                </div>
             </div>
+            
         </div>
+        <div>
+            <article class="blog-post">
+                <h1>6 Essential Tips to Dominate Your Next Hackathon</h1>
+                <div class="post-meta">
+                    <span>By Author Name</span>
+                    <span>July 17, 2024</span>
+                </div>
+                <img src="./garden-section-bg.jpg" alt="Hackathon Banner">
+                <section>
+                    <p>Hackathons are intense and exhilarating competitions, and mastering them requires more than just technical skills. Here are six essential tips to help you dominate your next hackathon:</p>
+                    <h2>1. Understand the Rules and Guidelines</h2>
+                    <p>Before diving into the project, ensure you thoroughly understand the hackathon's rules and guidelines. This includes the theme, judging criteria, and any constraints. Knowing what is expected can help you tailor your project for maximum impact.</p>
+                    <h2>2. Assemble a Balanced Team</h2>
+                    <p>A well-rounded team with diverse skills is crucial. Include members with strengths in different areas such as coding, design, project management, and presentation. This diversity ensures that all aspects of the project are covered efficiently.</p>
+                    <h2>3. Plan and Prioritize</h2>
+                    <p>Time management is key in hackathons. Create a clear plan with milestones and prioritize tasks. Focus on developing a functional prototype first, then add enhancements. This approach ensures you have a working project to present, even if time runs short.</p>
+                    <h2>4. Leverage Existing Resources</h2>
+                    <p>Don't reinvent the wheel. Use libraries, frameworks, and tools that can speed up development. Familiarize yourself with these resources beforehand to save valuable time during the hackathon.</p>
+                    <h2>5. Practice Effective Communication</h2>
+                    <p>Clear communication within the team is essential. Regularly update each other on progress, challenges, and next steps. This ensures everyone is on the same page and can collaborate effectively.</p>
+                    <h2>6. Prepare for the Presentation</h2>
+                    <p>A great project needs an equally great presentation. Practice your pitch, highlight the problem you solved, your innovative approach, and the impact of your solution. Make sure your presentation is clear, concise, and engaging.</p>
+                    <p>By following these tips, you'll be well-equipped to tackle your next hackathon and increase your chances of coming out on top. Good luck!</p>
+                </section>
+            </article>
+        </div> 
     </div>
-    </section>
-    <main>
-        <article class="blog-post">
-            <h1>6 Essential Tips to Dominate Your Next Hackathon</h1>
-            <div class="post-meta">
-                <span>By Author Name</span>
-                <span>July 17, 2024</span>
-            </div>
-            <img src="./garden-section-bg.jpg" alt="Hackathon Banner">
-            <section>
-                <p>Hackathons are intense and exhilarating competitions, and mastering them requires more than just technical skills. Here are six essential tips to help you dominate your next hackathon:</p>
-                <h2>1. Understand the Rules and Guidelines</h2>
-                <p>Before diving into the project, ensure you thoroughly understand the hackathon's rules and guidelines. This includes the theme, judging criteria, and any constraints. Knowing what is expected can help you tailor your project for maximum impact.</p>
-                <h2>2. Assemble a Balanced Team</h2>
-                <p>A well-rounded team with diverse skills is crucial. Include members with strengths in different areas such as coding, design, project management, and presentation. This diversity ensures that all aspects of the project are covered efficiently.</p>
-                <h2>3. Plan and Prioritize</h2>
-                <p>Time management is key in hackathons. Create a clear plan with milestones and prioritize tasks. Focus on developing a functional prototype first, then add enhancements. This approach ensures you have a working project to present, even if time runs short.</p>
-                <h2>4. Leverage Existing Resources</h2>
-                <p>Don't reinvent the wheel. Use libraries, frameworks, and tools that can speed up development. Familiarize yourself with these resources beforehand to save valuable time during the hackathon.</p>
-                <h2>5. Practice Effective Communication</h2>
-                <p>Clear communication within the team is essential. Regularly update each other on progress, challenges, and next steps. This ensures everyone is on the same page and can collaborate effectively.</p>
-                <h2>6. Prepare for the Presentation</h2>
-                <p>A great project needs an equally great presentation. Practice your pitch, highlight the problem you solved, your innovative approach, and the impact of your solution. Make sure your presentation is clear, concise, and engaging.</p>
-                <p>By following these tips, you'll be well-equipped to tackle your next hackathon and increase your chances of coming out on top. Good luck!</p>
-            </section>
-        </article>
-    </main>
-
-    <!-- <footer>
-        <p>&copy; 2024 TAIKAI. All rights reserved.</p>
-    </footer> -->
+    
+   
 </body>
 </html>
