@@ -109,6 +109,10 @@
         .dfsgsdj {
             padding: 1rem
         }
+        .abcefd{
+            display: flex;
+            flex-direction: row;
+        }
 
         @media only screen and (min-width: 475px) {
             #carousel {
@@ -133,6 +137,9 @@
 
             .dfsgsdj {
                 padding: 2.5rem
+            }
+            .abcefd{
+                flex-direction: column;
             }
         }
     </style>
@@ -471,7 +478,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="abcefd">
                                     <div class="card">
                                         <h3>Optimizing Mentor Engagement</h3>
                                         <p>Enhance mentor efficiency by dividing and organizing submissions and evaluations systematically. Streamline the process to ensure balanced workloads and focused assessments. Identify and gather potential students and their innovative ideas early on, ensuring smooth interactions. Foster a productive environment where mentors can provide impactful guidance, leading to a successful and enriching hackathon experience for all participants.
@@ -481,9 +488,13 @@
                                         <p>We have a team of experienced hackathon specialists who can help with all aspects
                                             of hackathon planning and execution. Services include customer support,
                                             challenge design, and more, to provide you with the best hackathon experience.
-                                        </p>
-                                        <div class="image"><img src="/images/customerSupport.svg"
-                                                alt="Customer support"></div>
+                                        </p><img src="/images/customerSupport.svg" style="
+                                        display: inherit;
+                                        margin: 1rem auto calc(2.5rem* -1) auto;
+                                        width: 100%;
+                                        height: auto;
+                                    " 
+                                                alt="Customer support">
                                     </div>
                                 </div>
                                 <div class="card">
@@ -493,10 +504,10 @@
                                             why we offer coins to all participants who create valuable projects.</p>
                                     </div><img src="./images/coins.png" alt="Earn prizes and coins" width="50" style="
     display: inherit;
-    margin: 0 auto calc(2.5rem* -1) auto;
+    margin: irem auto calc(2.5rem* -1) auto;
     width: 100%;
     height: auto;
-" height="50" />
+" />
                                 </div>
 
                                 <!-- <div class="card">
@@ -810,35 +821,12 @@
                             <div class="sc-68aa1f7-0 krZTeH">
                                 <div class="card">
                                     <div>
-                                        <h3>Easy hackathon setup</h3>
-                                        <p>Streamline your event planning and execution with our hackathon management
-                                            platform. All the features you need to run a successful hackathon such as
-                                            participant registration, team matchmaking, event timeline, internal
-                                            chat, and more - in a single tool.</p>
+                                        <h3>Easy setup for companies</h3>
+                                        <p>Streamline your event planning and execution with a hackathon management tool. All the features you need to
+                                            run a successful hackathon such as participant registration, team matchmaking, event timeline, internal
+                                            chat, and more.</p>
                                     </div>
-                                    <div class="easy-hackathon-setup"><svg width="1em" height="1em"
-                                            viewBox="0 0 161 183" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M.628 168.962l-.041.188 3.157 12.709 19.067-4.902L48.008 54.046l.079-.39-19.241-22.31L.628 168.962zM34.338 4.937l-2.38 11.496 60.193 72.394 25.43-6.538L49.934.928l-15.596 4.01zM100.126 98.38l25.25 29.187-85.29 21.927-4.09 24.074 123.958-31.867-3.04-12.236-31.365-37.622-25.423 6.536z"
-                                                fill="#D9D4ED"></path>
-                                            <path
-                                                d="M.628 168.962l-.041.188 3.157 12.709 19.067-4.902L48.008 54.046l.079-.39-19.241-22.31L.628 168.962zM34.338 4.937l-2.38 11.496 60.193 72.394 25.43-6.538L49.934.928l-15.596 4.01zM100.126 98.38l25.25 29.187-85.29 21.927-4.09 24.074 123.958-31.867-3.04-12.236-31.365-37.622-25.423 6.536z"
-                                                stroke="#B4A9DB"></path>
-                                        </svg>
-                                        <div class="free-transform-selection">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                            <div></div><svg width="30" height="30" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M16.757 1.5l11.44 25.455c.586 1.305-.777 2.665-2.08 2.075l-9.908-4.478a2.548 2.548 0 00-2.063-.01L3.6 29.112c-1.322.573-2.623-.783-1.996-2.081L13.94 1.5c.578-1.197 2.28-1.197 2.818 0z"
-                                                    fill="#C7BFE4" stroke="#8E7FCA" stroke-width="1"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="gradient"></div>
-                                        <div class="squares-wrapper"></div>
-                                    </div>
+                                    <div><img src="/images/publish-challenge.svg" alt="Easy setup for companies" style="width: 100%;"></div>
                                 </div>
                                 <div class="card">
                                     <div>
@@ -850,7 +838,7 @@
                                     <div class="custom-hackathon-page"><span
                                             style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><span
                                                 style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:59%"></span>
-                                            <img alt="Custom hackathon page" src="./images/hack-page.png"
+                                            <img alt="Custom hackathon page" src="./images/image.png"
                                                 decoding="async" data-nimg="responsive"
                                                 style="position:absolute;border-radius: 8px; top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" /><noscript><img
                                                     alt="Custom hackathon page" sizes="100vw"
@@ -881,16 +869,6 @@
                             <div class="sc-159df14b-0 lpgXBM">
                                 <div class="card">
                                     <div>
-                                        <h3>Network with industry experts</h3>
-                                        <p>Join forces with fellow students to form teams, share knowledge, and tackle
-                                            hackathon challenges together. Collaboration breeds innovation!</p>
-                                    </div>
-                                    <div class="sc-159df14b-3 UIEGA">
-                                        <img src="./image.png" alt="image" height="100" width="">
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div>
                                         <div class="sc-159df14b-1 iaSfDj"><span>Live</span></div>
                                         <h3>Concurrent assessment
                                         </h3>
@@ -900,13 +878,51 @@
                                 </div>
                                 <div class="card">
                                     <div>
-                                        <h3>Submission Dashboard</h3>
-                                        <p>Allow participants to submit their projects in rich formats with images,
-                                            videos, and attachments, in a user-friendly environment for participants and
-                                            judge.</p>
-                                    </div><img class="submission" src="./images/submissions.png"
-                                        alt="Submission Dashboard" style="width:100%" />
+                                        <h3>Community chat</h3>
+                                        <p>Communicate with others for knowledge sharing and to develop a Community </p>
+                                    </div>
+                                    <div class="sc-159df14b-3 UIEGA"><img src="/images/community-chat.svg" alt="Community chat"></div>
                                 </div>
+                                
+                                <div class="card">
+                                    <div>
+                                        <h3>Network with industry experts</h3>
+                                        <p>Join forces with fellow students to form teams, share knowledge, and tackle
+                                            hackathon challenges together. Collaboration breeds innovation!</p>
+                                    </div>
+                                    <div class="sc-159df14b-3 UIEGA">
+                                        <img src="/images/connections.jpg" alt="image" height="100" width="">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div>
+                                        <h3>Find teammates</h3>
+                                        <p>Looking to join forces? We got you covered. Use our matchmaking system to find teammates or get invited by other
+                                            teams to participate in the competition.</p>
+                                    </div>
+                                    <div class="image"><img src="/images/team.svg" alt="Matchmaking for participants"></div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div>
+                                        <h3>Efficient Team work</h3>
+                                        <p>Looking to join forces? We got you covered. Use our matchmaking system to find teammates or get invited by other
+                                            teams to participate in the competition.</p>
+                                    </div>
+                                    <div class="image"><img src="/images/Tasks.png" alt="Matchmaking for participants"></div>
+                                </div>
+                                <div class="card">
+                                    <h3>Submission Dashboard</h3>
+                                    <p>Allow participants to submit their projects in rich formats with images,
+                                        videos, and attachments, in a user-friendly environment for participants and
+                                        judge.</p><img src="/images/Submission.png" style="
+                                        display: inherit;
+                                        margin: 1rem auto calc(2.5rem* -1) auto;
+                                        width: 100%;
+                                        height: auto;
+                                    " 
+                                                alt="Customer support">
+                                    </div>
                                 <div class="card">
                                     <div>
                                         <h3>Score system</h3>
@@ -1004,17 +1020,14 @@
                                         </div>
                                     </div>
                                 </div>
+                                    
                                 <div class="card">
                                     <div>
-                                        <h3>Network with industry experts</h3>
-                                        <p>Join forces with fellow students to form teams, share knowledge, and tackle
-                                            hackathon challenges together. Collaboration breeds innovation!</p>
-                                    </div>
-                                    <div class="sc-159df14b-3 UIEGA">
-                                        <img src="./image.png" alt="image" height="100" width="">
-                                    </div>
+                                        <h3>Showcase your ideas</h3>
+                                        <p>Encouraging out-of-the-box thinking, our platform fosters a culture of innovation and experimentation, essential for tackling today’s challenges. Participants are provided with access to experienced mentors who offer personalized guidance and support, ensuring that creative ideas are nurtured and refined.</p>
+                                    </div><img src="./images/ideas.png" alt="Attract and hire talent">
                                 </div>
-
+                            
                             </div>
                             <!-- <div class="card">
                     <div>
