@@ -125,6 +125,14 @@
         .styles_wrapper__9AY5g>div {
             padding: 1rem;
         }
+        .marquee div {
+            display: block;
+            width: 200%;
+            height: 50px;
+            position: absolute;
+            overflow: hidden;
+            animation: marquee 20s linear infinite;
+        }
 
         @media only screen and (min-width: 475px) {
             #carousel {
@@ -156,7 +164,35 @@
             .styles_wrapper__9AY5g>div {
                 padding: 2.5rem;
             }
+            .marquee div {
+                display: block;
+                width: 200%;
+                height: 50px;
+                position: absolute;
+                overflow: hidden;
+                animation: marquee 30s linear infinite;
+            }
         }
+        
+.marquee {
+    height: 50px;
+    width: 100vw;
+    z-index: 1000 ;
+    overflow: hidden;
+    position: relative;
+  }
+    
+    
+    
+    .marquee span {
+        width: max-content;
+    }
+  
+    @keyframes marquee {
+        0% { left: 0; }
+        50% { left: -100%; }
+        100% { left: 0%; }
+    }
     </style>
 </head>
 
@@ -165,7 +201,16 @@
         <div data-rk="">
             <div class="sc-f665c30b-0 jbrCMR">
                 <div class="sc-e9689e97-0 jpgtoB nav">
-                    <div class="sc-e9689e97-7 jyioOO"><a href="/hackathons/ai-july-hack"><p>Register for our upcoming Hackathon:</p> &nbsp; &nbsp;<h6 style="font-size: 13px; font-weight: 600; color:white; background-color:#043254; border-radius: 30px;padding: 10px;">Strategic Upskilling in the Age of AI    </h6>&nbsp;  &nbsp; Monday | 28th July, 2024 | </a></div>
+                    <div class="sc-e9689e97-7 jyioOO marquee">
+                       <div class="">
+                            <span><a href="/hackathons/ai-july-hack" style="display:flex;padding:5px;min-width:1000px">
+                                    Register for our upcoming Hackathon: &nbsp; &nbsp;
+                                    <h6 style="font-size: 13px; font-weight: 600; color:white; background-color:#043254; border-radius: 30px;padding: 8px;width:310px;text-align:center">
+                                        Strategic Upskilling in the Age of AI </h6>&nbsp; &nbsp; Monday | 28th July, 2024 |
+                                </a>
+                            </span>
+                       </div>
+                    </div>
                     <div class="sc-e9689e97-1 gFVNHq">
                     <button class="sc-e9689e97-2 jSrkpH" aria-label="Menu"
                             onclick="if(document.getElementsByClassName('sc-e9689e97-2')[0].classList.contains('opened')){document.getElementsByClassName('sc-e9689e97-2')[0].classList.remove('opened');document.getElementsByClassName('sc-e9689e97-6')[0].classList.remove('opened');}else{document.getElementsByClassName('sc-e9689e97-2')[0].classList.add('opened');document.getElementsByClassName('sc-e9689e97-6')[0].classList.add('opened')}"></button>
