@@ -1644,6 +1644,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
         data-cf-settings="b9f973870e986f68602f1207-|49" defer></script>
@@ -1661,6 +1662,16 @@
         }
         function replaceTaskbar() {
             document.getElementById('carousel').src = './images/usercoins.png'
+        }
+        function getAllHackathons(){
+            let url = 'https://makeskilled.com/hackathond/api/findEvents'
+            axios.get(url)
+            .then((res)=>{
+                console.log(res.data)
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
         }
     </script>
 </body>
