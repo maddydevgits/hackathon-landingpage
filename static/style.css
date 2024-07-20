@@ -3837,6 +3837,29 @@
             .lpgXBM .card:nth-child(5) div:last-child img {
                 margin: 0 0 -0.3125rem 0;
             }
+            .lpgXBM .card:nth-child(8) {
+                grid-column: 1 / 3;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                padding: 2.5rem;
+            }
+            .lpgXBM .card:nth-child(8) div:first-child {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+            .lpgXBM .card:nth-child(8) div:last-child img {
+                margin: 0 0 -0.3125rem 0;
+            }   
         }
 
         /*!sc*/
