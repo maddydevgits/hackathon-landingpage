@@ -1719,9 +1719,20 @@
             let allCards = ''
             axios.get(url)
             .then((res)=>{
-                console.log(res.data)
                 if(res.data instanceof Array){
                     for(let event of res.data){
+                        let creationDate = new Date(event.timestamp.split(' ')[0])
+                        let startDate = new Date(event.date)
+                        let currentDate = new Date()
+                        let today = new Date(currentDate.toISOString().split('T')[0])
+                        let diff = startDate.getTime() - creationDate.getTime()
+                        let presentDiff = startDate.getTime() - today.getTime()
+                        let reaingDays = Math.round(presentDiff / (1000*3600*24))
+                        let totalDays = diff / (1000*3600 *24)
+                        if(reaingDays < 0){
+                            reaingDays =0
+                        }
+
                         allCards +=`
                         <div>
                             <div class="sc-d8382d2-0 cslMRW">
@@ -1762,7 +1773,7 @@
                                                     <div class="sc-dAlyuH bOmZzu">
                                                         <div class="sc-jlZhew bNEVWE"></div>
                                                     </div>
-                                                    <div class="sc-cwHptR ikcmWx">18 days left</div>
+                                                    <div class="sc-cwHptR ikcmWx">${(reaingDays==1) ? "1 Day left" : `${reaingDays} Days left`}</div>
                                                 </div>
                                             </div>
                                             <div class="sc-d8382d2-10 cjlEcD"><span>Prize</span>
@@ -1773,8 +1784,6 @@
                                 </a>
                             </div>
                         </div>
-                        
-                        
                         `
                     }
                     hackathonParent.innerHTML = allCards
