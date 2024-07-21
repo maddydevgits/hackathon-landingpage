@@ -133,6 +133,7 @@
             overflow: hidden;
             animation: marquee 20s linear infinite;
         }
+        
 
         @media only screen and (min-width: 475px) {
             #carousel {
@@ -1721,6 +1722,7 @@
             .then((res)=>{
                 if(res.data instanceof Array){
                     for(let event of res.data){
+
                         let creationDate = new Date(event.timestamp.split(' ')[0])
                         let startDate = new Date(event.date)
                         let currentDate = new Date()
@@ -1729,9 +1731,12 @@
                         let presentDiff = startDate.getTime() - today.getTime()
                         let reaingDays = Math.round(presentDiff / (1000*3600*24))
                         let totalDays = diff / (1000*3600 *24)
+                        let percentage = 0
                         if(reaingDays < 0){
                             reaingDays =0
+                            percentage =100
                         }
+                        percentage =  Math.round((reaingDays/totalDays)*100)
 
                         allCards +=`
                         <div>
@@ -1770,9 +1775,10 @@
                                         <div class="sc-d8382d2-7 ctTEHq">
                                             <div class="sc-d8382d2-9 lfjmjm">
                                                 <div class="sc-kpDqfm ihRbpv">
-                                                    <div class="sc-dAlyuH bOmZzu">
-                                                        <div class="sc-jlZhew bNEVWE"></div>
-                                                    </div>
+                                                    <!--<div class="sc-dAlyuH bOmZzu" >
+                                                        <div class="colorPerc" id="colorFilled"></div>
+                                                    </div>-->
+                                                    <input type="range" readonly value="${percentage}" min="0" max="100" style="background:#4329A6;" />
                                                     <div class="sc-cwHptR ikcmWx">${(reaingDays==1) ? "1 Day left" : `${reaingDays} Days left`}</div>
                                                 </div>
                                             </div>
