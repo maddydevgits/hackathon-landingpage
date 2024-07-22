@@ -5429,113 +5429,95 @@
 
         /*!sc*/
 
+        
+
         body {
-    font-family: 'SFRounded', ui-rounded, 'SF Pro Rounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    background-color: #1a1919;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-    color: #333;
-}
+        font-family: 'SFRounded', ui-rounded, 'SF Pro Rounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+        color: #333;
+        }
 
-.card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 20px;
-}
+        .blog-post {
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 20px;
+        }
 
-/* .partnerContainer {
-    background-color: #fff;
-    color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-} */
+        .blog-post h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+        }
 
-.partnerContainer .ast-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .blog-post .post-meta {
+        color: #666;
+        font-size: 0.9em;
+        margin-bottom: 1em;
+        }
 
-.partnerContainer .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+        .blog-post .post-meta span {
+        display: inline-block;
+        margin-right: 10px;
+        }
 
-.partnerContainer .col-md-3,
-.partnerContainer .col-sm-6,
-.partnerContainer .col-6,
-.partnerContainer .col-lg-3 {
-    flex: 1 1 25%;
-    max-width: 25%;
-    box-sizing: border-box;
-    padding: 50px;
-}
+        .blog-post img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin: 20px 0;
+        }
 
-.partnerContainer .col-md-10 {
-    text-align: center;
-    max-width: 100%;
-    flex: 1 1 auto;
-}
+        .blog-post h2 {
+        font-size: 1.8em;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+        color: #0E76FD;
+        }
 
-.partnerContainer .contentContainer {
-    text-align: left;
-}
+        .blog-post p {
+        margin-bottom: 1em;
+        }
 
-.partnerContainer .partnerTitle {
-    font-size: 1.875rem;
-    margin-bottom: 1em;
-}
+        .partnerContainer {
+        background-color: #0E76FD;
+        color: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px auto;
+        max-width: 800px;
+        }
 
-.partnerContainer .partnerTitle span {
-    font-weight: bold;
-}
+        .partnerContainer .partnerTitle span {
+        font-weight: bold;
+        }
 
-.partnerContainer p {
-    color: #fff;
-    margin-bottom: 1.5em;
-}
+        .partnerContainer p {
+        color: #fff;
+        }
 
-/* Style for the icon containers */
-.iconContainer {
-    text-align: center; /* Center align the icons */
-}
+        .partnerContainer .iconContainer img {
+        width: 50px;
+        height: 50px;
+        }
 
-.iconContainer img {
-    width: 50px;
-    height: 50px;
-    background-color: #4329A6;
-    border-radius: 5px;
-    margin-bottom: 10px; /* Space below the icons */
-    display: inline-block; /* Ensure icons are inline */
-}
+        .partnerContainer .subTitleContainer p {
+        margin-top: 10px;
+        }
 
-/* Style for the subtitle containers */
-.subTitleContainer {
-    text-align: center; /* Center align the subtitles */
-    margin-top: 10px; /* Space above the subtitles */
-}
-
-.subTitleContainer p {
-    margin: 0; /* Remove default margin */
-    font-size: 14px; /* Adjust font size */
-    line-height: 1.4; /* Improve readability */
-}
-
-
-.partnerContainer .subTitleContainer p {
-    margin-top: 0;
-    font-size: 0.9em;
-}
-
-@media (max-width: 768px) {
-    .partnerContainer .row {
-        flex-direction: column;
-    }
-}
+        .partnerContainer .customStartLink {
+        display: inline-block;
+        background-color: #fff;
+        color: #0E76FD;
+        padding: 10px 20px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 20px;
+        }
 
     

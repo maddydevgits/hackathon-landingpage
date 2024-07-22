@@ -1,168 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>HackerTribe - Hackathon Platform</title>
-        <meta name="author" content="hackertribe" />
-        <meta name="description" content="Participate in online virtual, offline hackathons. We offer students an innovative way to learn new skills, build cool projects, earn rewards, and grow your network." />
-        <link rel="manifest" href="/static/manifest.json" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.webmanifest" />
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HackerTribe - Hackathon Platform</title>
+    <meta name="author" content="hackertribe" />
+    <meta name="description"
+        content="Participate in online virtual, offline hackathons. We offer students an innovative way to learn new skills, build cool projects, earn rewards, and grow your network." />
+    <link rel="manifest" href="/static/manifest.json" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="next-head-count" content="24" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/css/froala_editor.pkgd.min.css"
+        type="text/css" />
+    <link rel="preload" href="_next/static/css/1729af219c6c909b.css" as="style" />
+    <link rel="stylesheet" href="_next/static/css/1729af219c6c909b.css" data-n-g="" />
+    <link rel="preload" href="_next/static/css/3bb650c3a5be360f.css" as="style" />
+    <link rel="stylesheet" href="_next/static/css/3bb650c3a5be360f.css" data-n-p="" /><noscript
+        data-n-css=""></noscript>
+    <script defer="" nomodule="" src="_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/webpack-34463465b292413d.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/framework-ac6550882a30386c.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/main-37077a0f94e4a7da.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/pages/_app-43f1ae51b6454274.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/c0d53ec4-47f2ad0bed81ca8d.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/fec483df-64130a439708949a.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/ee9ce975-34670f388effd17c.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/bed5e019-dacdec722f1a04da.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/cfb35ab8-26b6e469a8dd6703.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/5d3e5854-9153f11fd4555ba5.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/8764-dbd95fd81c44c3e6.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/8019-1597377f66317c84.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/4179-0ed4568426d525fd.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/3319-8958f507d82e7949.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/4979-920609fcf27ad5b3.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/6652-4fece4a89d7600f0.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/8966-ab41c1e2ebb72a57.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/5675-2f372d36ba2b7e3e.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/445-da71a8d837d0e016.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/5993-7ebd2a985c661033.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/4572-9260df623f56319e.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/1645-bc0a9f08aa917409.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/4737-46fea53173cbe5d6.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/434-7cdae86042c505fe.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/9718-82f0f7ba708facc1.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/4313-94a6c87570cbf757.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/1712-4268cced992f59b7.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/792-e5c9775d467b99fa.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/chunks/pages/index-0062175786af6779.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/xmPbyS2F9nA6lCZ6TMKWF/_buildManifest.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <script src="_next/static/xmPbyS2F9nA6lCZ6TMKWF/_ssgManifest.js" defer=""
+        type="b9f973870e986f68602f1207-text/javascript"></script>
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static/bodystyle.css" />
+    <style>
+        .dMHVub .card {
+            padding: 1rem;
+        }
+
+        .krZTeH .card {
+            padding: 1rem;
+        }
+
+        .lpgXBM .card {
+            padding: 1rem;
+            justify-content: flex-start;
+            row-gap: 10px;
+        }
+        .lpgXBM>div:nth-child(5) div:first-child {
+            padding: 1rem;
+        }
+        .lpgXBM>div:nth-child(5) div:last-child img {
+            margin:10px;
+        }
+
+        .UeHRU {
+            display: block;
+        }
+
+        .dfsgsdj {
+            padding: 1rem
+        }
+        .abcefd{
+            display: flex;
+            flex-direction: row;
+            margin-right: 1rem;
+        }
+        .styles_wrapper__9AY5g>div {
+            padding: 1rem;
+        }
+        .marquee div {
+            display: block;
+            width: 200%;
+            height: 50px;
+            position: absolute;
+            overflow: hidden;
+            animation: marquee 20s linear infinite;
+        }
+        #cdh{
+            max-height: 700px;
+        }
         
-        <meta name="next-head-count" content="24" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/css/froala_editor.pkgd.min.css" type="text/css" />
-        <link rel="preload" href="_next/static/css/1729af219c6c909b.css" as="style" />
-        <link rel="stylesheet" href="_next/static/css/1729af219c6c909b.css" data-n-g="" />
-        <link rel="preload" href="_next/static/css/3bb650c3a5be360f.css" as="style" />
-        <link rel="stylesheet" href="_next/static/css/3bb650c3a5be360f.css" data-n-p="" /><noscript data-n-css=""></noscript>
-        <script defer="" nomodule="" src="_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/webpack-34463465b292413d.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/framework-ac6550882a30386c.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/main-37077a0f94e4a7da.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/pages/_app-43f1ae51b6454274.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/c0d53ec4-47f2ad0bed81ca8d.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/fec483df-64130a439708949a.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/ee9ce975-34670f388effd17c.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/bed5e019-dacdec722f1a04da.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/cfb35ab8-26b6e469a8dd6703.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/5d3e5854-9153f11fd4555ba5.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/8764-dbd95fd81c44c3e6.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/8019-1597377f66317c84.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/4179-0ed4568426d525fd.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/3319-8958f507d82e7949.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/4979-920609fcf27ad5b3.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/6652-4fece4a89d7600f0.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/8966-ab41c1e2ebb72a57.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/5675-2f372d36ba2b7e3e.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/445-da71a8d837d0e016.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/5993-7ebd2a985c661033.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/4572-9260df623f56319e.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/1645-bc0a9f08aa917409.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/4737-46fea53173cbe5d6.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/434-7cdae86042c505fe.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/9718-82f0f7ba708facc1.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/4313-94a6c87570cbf757.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/1712-4268cced992f59b7.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/792-e5c9775d467b99fa.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/chunks/pages/index-0062175786af6779.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/xmPbyS2F9nA6lCZ6TMKWF/_buildManifest.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <script src="_next/static/xmPbyS2F9nA6lCZ6TMKWF/_ssgManifest.js" defer="" type="b9f973870e986f68602f1207-text/javascript"></script>
-        <link rel="stylesheet" href="static/style.css" />
-        <link rel="stylesheet" href="static/bodystyle.css" />
-        <style>
-            .blog-post {
-                background-color: #fff;
-                border-radius: 12px;
-                box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-                margin: 20px auto;
-                max-width: 800px;
-                padding: 20px;
+
+        @media only screen and (min-width: 475px) {
+            #carousel {
+                width: 90%;
             }
-    
-            .blog-post h1 {
-                font-size: 2.5em;
-                margin-bottom: 0.5em;
+            #cdh{
+                line-height: 1.5;
+                max-height: 100%;
             }
-    
-            .blog-post .post-meta {
-                color: #666;
-                font-size: 0.9em;
-                margin-bottom: 1em;
+            .dMHVub .card {
+                padding: 2.5rem;
             }
-    
-            .blog-post .post-meta span {
-                display: inline-block;
-                margin-right: 10px;
+            .krZTeH .card {
+                padding: 2.5rem;
             }
-    
-            .blog-post img {
-                max-width: 100%;
-                height: auto;
-                border-radius: 12px;
-                margin: 20px 0;
+
+            .lpgXBM .card {
+                padding: 2.5rem;
             }
-    
-            .blog-post h2 {
-                font-size: 1.8em;
-                margin-top: 1.5em;
-                margin-bottom: 0.5em;
-                color: #0E76FD;
+
+            .UeHRU {
+                display: grid;
             }
-    
-            .blog-post p {
-                margin-bottom: 1em;
+
+            .dfsgsdj {
+                padding: 2.5rem
             }
-    
-            .partnerContainer {
-                background-color: #0E76FD;
-                color: #fff;
-                padding: 20px;
-                border-radius: 12px;
-                margin: 20px auto;
-                max-width: 800px;
+            .abcefd{
+                flex-direction: column;
             }
-    
-            .partnerContainer .partnerTitle span {
-                font-weight: bold;
+            .styles_wrapper__9AY5g>div {
+                padding: 2.5rem;
             }
-    
-            .partnerContainer p {
-                color: #fff;
-            }
-    
-            .partnerContainer .iconContainer img {
-                width: 50px;
+            .marquee div {
+                display: block;
+                width: 200%;
                 height: 50px;
+                position: absolute;
+                overflow: hidden;
+                animation: marquee 30s linear infinite;
             }
-    
-            .partnerContainer .subTitleContainer p {
-                margin-top: 10px;
-            }
-    
-            .partnerContainer .customStartLink {
-                display: inline-block;
-                background-color: #fff;
-                color: #0E76FD;
-                padding: 10px 20px;
-                border-radius: 12px;
-                text-decoration: none;
-                font-weight: bold;
-                margin-top: 20px;
-            }
-            </style>
+        }
+        
+.marquee {
+    height: 50px;
+    width: 100vw;
+    z-index: 1000 ;
+    overflow: hidden;
+    position: relative;
+  }
+    .marquee span {
+        width: max-content;
+    }
+  
+    @keyframes marquee {
+        0% { left: 0; }
+        50% { left: -100%; }
+        100% { left: 0%; }
+    }
+    </style>
     </head>
 <body>
     <div id="__next" >
         <div data-rk="" >
             <div class="sc-f665c30b-0 jbrCMR">
                 <div class="sc-e9689e97-0 jpgtoB nav">
-                    <div class="sc-e9689e97-7 jyioOO"><a href="/hackathons/ai-july-hack">July AI Hack on 28th July!<img src="https://sps.mgu.ac.in/wp-content/uploads/2021/10/new-icon-gif-9.gif" height="30" width="50"/></a></div>
+                    <div class="sc-e9689e97-7 jyioOO marquee">
+                       <div class="">
+                            <span><a href="https://hackertribe.community/hackathons/ai-july-hack" style="display:flex;padding:5px;min-width:1000px">
+                                    Register for our upcoming Hackathon: &nbsp; &nbsp;
+                                    <h6 style="font-size: 13px; font-weight: 600; color:white; background-color:#043254; border-radius: 30px;padding: 8px;width:310px;text-align:center">
+                                        Makeskilled July AI Hack </h6>&nbsp; &nbsp; Sunday | 28th July, 2024 |
+                                </a>
+                            </span>
+                       </div>
+                    </div>
                     <div class="sc-e9689e97-1 gFVNHq">
-                        <button class="sc-e9689e97-2 jSrkpH" aria-label="Menu"></button>
-                        <div class="sc-e9689e97-3 kZdyoo">
-                            <a href="/"><img alt="makeskiled_logo" src="./images/Make-9.png" width="120" height="50"></a>
+                    <button class="sc-e9689e97-2 jSrkpH" aria-label="Menu"
+                            onclick="if(document.getElementsByClassName('sc-e9689e97-2')[0].classList.contains('opened')){document.getElementsByClassName('sc-e9689e97-2')[0].classList.remove('opened');document.getElementsByClassName('sc-e9689e97-6')[0].classList.remove('opened');}else{document.getElementsByClassName('sc-e9689e97-2')[0].classList.add('opened');document.getElementsByClassName('sc-e9689e97-6')[0].classList.add('opened')}"></button>
+                        <div class="sc-e9689e97-3">
+                            <a href="/"><img alt="makeskiled_logo" src="./images/ht logo.png" style="max-width: 180px;"></a>
                         </div>
-                        <nav aria-label="Main" data-orientation="horizontal" dir="ltr" class="styles_NavigationMenuRoot__P_zfK">
+                        <nav aria-label="Main" data-orientation="horizontal" dir="ltr"
+                            class="styles_NavigationMenuRoot__P_zfK">
                             <div style="position:relative">
                                 <!-- Navigation Menu List -->
                                 <ul data-orientation="horizontal" class="styles_NavigationMenuList__5D5Co" dir="ltr">
                                     <li>
-                                        <a class="styles_NavigationMenuLink__M9pYA" href="/en/hackathons" data-radix-collection-item="">Hackathons</a>
+                                        <a class="styles_NavigationMenuLink__M9pYA" href="https://makeskilled.com/hackathonlanding/#hackathon"
+                                            data-radix-collection-item="">Hackathons</a>
                                     </li>
                                     <li>
-                                        <a class="styles_NavigationMenuLink__M9pYA" href="" data-radix-collection-item="">Events</a>
+                                        <a class="styles_NavigationMenuLink__M9pYA" href="https://makeskilled.com/hackathonlanding/#features"
+                                            data-radix-collection-item="">Features</a>
                                     </li>
                                     <li>
-                                        <a class="styles_NavigationMenuLink__M9pYA" href="" data-radix-collection-item="">Coins</a>
+                                        <a class="styles_NavigationMenuLink__M9pYA" href="https://makeskilled.com/hackathonlanding/#Blog"
+                                            data-radix-collection-item="">Blogs</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a class="styles_NavigationMenuLink__M9pYA" href=""
+                                            data-radix-collection-item="">Resources</a>
+                                    </li> -->
+                                    <li>
+                                        <a class="styles_NavigationMenuLink__M9pYA" href="https://makeskilled.com/hackathonlanding/#Colleges"
+                                            data-radix-collection-item="">Customers</a>
+                                    </li>
+                                    <li>
+                                        <a class="styles_NavigationMenuLink__M9pYA" href="https://makeskilled.com/hackathonlanding/coins.html"
+                                            data-radix-collection-item="">Coins</a>
                                     </li>
                                 </ul>
                             </div>
+                            <div class="styles_ViewportPosition__wHuhU"></div>
                         </nav>
+
+                        <div class="sc-e9689e97-5 jVtAAi"><a color="purple500"
+                                class="styles__ButtonLinkStyle-sc-clge7v-0 jSNUG button login-button" href="https://hackertribe.community/signin"
+                                target="" rel="" value="Log in" data-testid="login-button" data-event="" aria-label=""
+                                aria-hidden="false"><span>Log in</span>
+                            </a>
+                        </div>
                     </div>
+                </div>
+                <div class="sc-e9689e97-6 ejGRR">
+                    <ul>
+                        <li><a href="https://makeskilled.com/hackathonlanding/#hackathons"><span>Hackathons</span></a></li>
+                        <li><a href="https://makeskilled.com/hackathonlanding/#features"><span>Features</span></a></li>
+                        <li><a href="https://makeskilled.com/hackathonlanding/#Blog"><span>Blogs</span></a></li>
+                        <!-- <li><a href="/en/hackathons"><span>Resources</span></a></li> -->
+                        <li><a href="https://makeskilled.com/hackathonlanding/#Colleges"><span>Customers</span></a></li>
+                        <li><a href="https://makeskilled.com/hackathonlanding/coins.html"><span>Coins</span></a></li>
+                    </ul>
                 </div>
                 <div style="padding: 50px;">
                     <!-- <div class="partnerContainer">
