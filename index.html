@@ -397,10 +397,10 @@
                         </div>
                     </div>
                 </section>
-                <div id="garden-whitepaper" class="styles_wrapper__9AY5g" style="padding:0">
-                    <div class="dfsgsdj"><img src="./images/IH.png" alt="" style="width: 300px;">
-                        <h2>Nurturing Innovations and Harvesting Success.</h2>
-                        <p>
+                <div id="garden-whitepaper" class="styles_wrapper__9AY5g" style="padding:0;height: 300px;">
+                    <div class="dfsgsdj"><img src="./images/IH.png" alt="" style="width: 300px;position: absolute; left: 120px; bottom: 40px;border: 2px solid whitesmoke;">
+                        <h2 style="border: 2px solid whitesmoke;margin: 20px;">Nurturing Innovations and Harvesting Success.</h2>
+                        <p style="border: 2px solid whitesmoke;width: 1700px;">
                             At the <strong>HackerTribe </strong>Innovation Hub, hackathon initiatives are provided with the perfect environment to thrive! We've created a vibrant space where your ideas can take root and grow. The Innovation Hub fosters creativity and collaboration. Transforming your concepts into successful ventures is more than just an idea—it's a journey of innovation and growth.
                             
                             </p>
@@ -1717,7 +1717,7 @@
         function getAllHackathons(){
             let hackathonParent = document.getElementById('cards-container')
             hackathonParent.innerHTML = `<b style="texy-align:center"> Loading all hackathons....</b>`
-            let url = 'https://makeskilled.com/hackathond/api/findEvents'
+            let url = 'https://hackertribe.community/api/findEvents'
             let allCards = ''
             axios.get(url)
             .then((res)=>{
@@ -1745,7 +1745,7 @@
                                 <a href="signin">
                                     <div class="sc-d8382d2-1 kOaQJf">
                                         <img
-                                            src="https://makeskilled.com/hackathond/${event.mobileimage}"
+                                            src="https://hackertribe.community/${event.mobileimage}"
                                             alt="${event.name}"
                                             class="sc-d8382d2-2 fzXXkz" />
                                         <div class="sc-d8382d2-3 eUoqCd" onclick="location.href='signin'">Register</div>
